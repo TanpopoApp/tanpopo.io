@@ -484,20 +484,16 @@ body {
 
 	.cat-flex {
 		position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
 		flex-direction: column;
 		margin: 0;
 	}
 
 	.cat1 {
-		-webkit-box-flex:1;
-		-ms-flex:1;
-		flex:1;
+		display:flex;
+		width: 30%;
 		text-align: center;
 	}
 
@@ -540,7 +536,7 @@ body {
 		margin-bottom: 25px;
 		margin-right: 0;
 		padding: 50px 50px;
-		border-radius: 1px;
+		border-radius: 4px;
 		background: #FFFFFF;
 		cursor: pointer;
 		text-align: left;
@@ -557,8 +553,6 @@ body {
 
 	.cat-item.clr3 {
 		background: #f0f5f9;
-		margin-right: 0;
-		padding-right: 50px;
 	}
 
 	.cat-img img {
@@ -1668,11 +1662,6 @@ body {
 		margin-bottom: 0;
 	}
 
-
-	.cat-item {
-		margin-right: 25px;
-	}
-
 	.cat2 h2 {
 		font-size: 34px;
 	}
@@ -1877,6 +1866,15 @@ body {
 
 		.flex-inner .f-text {
 			text-align: center;
+	}
+
+	.cat1 {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.cat-item {
+		width: 80%;
 	}
 
 }
