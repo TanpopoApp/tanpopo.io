@@ -3,7 +3,9 @@ import { NuxtConfig } from '@nuxt/types';
 const config: NuxtConfig = {
   target: 'static',
   components: true,
-
+  server: {
+    host: '0'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Tanpopo',

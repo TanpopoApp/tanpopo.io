@@ -17,6 +17,8 @@
           <img
             src="~/assets/tanpopo.png"
             alt="tanpopo preview"
+            width="1196"
+            height="877"
             :class="$style.image"
           />
         </div>
@@ -75,6 +77,7 @@ export default class Index extends Vue {}
   padding: 0 16px;
 }
 .image {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -116,7 +119,6 @@ export default class Index extends Vue {}
   }
 
   &Image {
-    display: flex;
     margin-left: 24px;
   }
 }
@@ -164,6 +166,7 @@ export default class Index extends Vue {}
 @media screen and (max-width: $Mobile) {
   .intro {
     flex-direction: column;
+    min-height: auto;
 
     &Desc {
       display: flex;
@@ -175,13 +178,14 @@ export default class Index extends Vue {}
     }
 
     &Image {
-      display: flex;
       width: 100%;
       margin-left: 0;
     }
   }
 
   .features {
+    margin-top: 16px;
+
     &List {
       flex-direction: column;
     }
